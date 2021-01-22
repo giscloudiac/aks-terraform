@@ -9,7 +9,7 @@ variable "domain_name" {
 
 variable "ip_node01" {
   type        = string
-  default     = "8.8.8.8"
+  default     = "1.1.1.1"
   description = "ip node01 "
 }
 
