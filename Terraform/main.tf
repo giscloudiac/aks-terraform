@@ -5,14 +5,24 @@ provider "azurerm" {
 }
 
 
+
 resource "azurerm_resource_group" "rg" {
   name     = var.rgroup
   location = var.location
 }
 
+<<<<<<< HEAD
 terraform {
     backend "azurerm" {
         resource_group_name  = "tcb-terrastate"
+=======
+
+
+
+terraform {
+    backend "azurerm" {
+        resource_group_name  = "tcb-aks"
+>>>>>>> 215365ef8a1997fd5b3824050823c5c4bd84651e
         storage_account_name = "tfstoreacgis"
         container_name       = "tfstate"
         key                  = "terraform.tfstate"
